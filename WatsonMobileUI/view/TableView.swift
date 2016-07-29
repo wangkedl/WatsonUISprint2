@@ -118,6 +118,7 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
             return cell
         }
         
+    }
         //选择一行
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
         print("goods Item selected")
@@ -131,6 +132,4 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
 
     }
 
-        
-    }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187DB7F61D4B2F03007CEB7C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DB7F51D4B2F03007CEB7C /* DetailViewController.swift */; };
+		187DB7F81D4B3020007CEB7C /* loading1.png in Resources */ = {isa = PBXBuildFile; fileRef = 187DB7F71D4B3020007CEB7C /* loading1.png */; };
+		187DB7FA1D4B303F007CEB7C /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 187DB7F91D4B303F007CEB7C /* loading.png */; };
 		5A35D4751C47B25600200076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A35D4741C47B25600200076 /* AppDelegate.swift */; };
 		5A35D4771C47B25600200076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A35D4761C47B25600200076 /* ViewController.swift */; };
 		5A35D47A1C47B25600200076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A35D4781C47B25600200076 /* Main.storyboard */; };
@@ -79,8 +82,6 @@
 		7F725BC01D2FF43400DA1CAC /* Ok-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F725BBF1D2FF43400DA1CAC /* Ok-100.png */; };
 		7F725BC21D2FF43800DA1CAC /* Ok-96.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F725BC11D2FF43800DA1CAC /* Ok-96.png */; };
 		7F821CF71D348CF4000B8274 /* Goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F821CF61D348CF4000B8274 /* Goods.swift */; };
-		7F821CF91D34CB84000B8274 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F821CF81D34CB84000B8274 /* loading.png */; };
-		7F821CFB1D34CC16000B8274 /* loading1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F821CFA1D34CC16000B8274 /* loading1.png */; };
 		7F87E0241D23BFDF00164F01 /* add1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F87E0231D23BFDF00164F01 /* add1.png */; };
 		7F87E0261D23C30600164F01 /* mirco.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F87E0251D23C30600164F01 /* mirco.png */; };
 		7F87E0281D23DCED00164F01 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F87E0271D23DCED00164F01 /* earth.png */; };
@@ -123,6 +124,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187DB7F51D4B2F03007CEB7C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		187DB7F71D4B3020007CEB7C /* loading1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading1.png; sourceTree = "<group>"; };
+		187DB7F91D4B303F007CEB7C /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 		5A35D4711C47B25600200076 /* WatsonMobileUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonMobileUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A35D4741C47B25600200076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A35D4761C47B25600200076 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -200,8 +204,6 @@
 		7F725BBF1D2FF43400DA1CAC /* Ok-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ok-100.png"; sourceTree = "<group>"; };
 		7F725BC11D2FF43800DA1CAC /* Ok-96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ok-96.png"; sourceTree = "<group>"; };
 		7F821CF61D348CF4000B8274 /* Goods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goods.swift; sourceTree = "<group>"; };
-		7F821CF81D34CB84000B8274 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = ../../../loading.png; sourceTree = "<group>"; };
-		7F821CFA1D34CC16000B8274 /* loading1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading1.png; path = ../../../loading1.png; sourceTree = "<group>"; };
 		7F87E0231D23BFDF00164F01 /* add1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add1.png; sourceTree = "<group>"; };
 		7F87E0251D23C30600164F01 /* mirco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mirco.png; sourceTree = "<group>"; };
 		7F87E0271D23DCED00164F01 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				5A35D4A21C47B27400200076 /* images */,
 				5A35D4741C47B25600200076 /* AppDelegate.swift */,
 				5A35D4761C47B25600200076 /* ViewController.swift */,
+				187DB7F51D4B2F03007CEB7C /* DetailViewController.swift */,
 				5A35D4781C47B25600200076 /* Main.storyboard */,
 				5A35D47B1C47B25600200076 /* Assets.xcassets */,
 				5A35D47D1C47B25600200076 /* LaunchScreen.storyboard */,
@@ -311,9 +314,9 @@
 		5A35D4A21C47B27400200076 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				187DB7F71D4B3020007CEB7C /* loading1.png */,
 				7F4007001D266331001C95DC /* message_left.png */,
-				7F821CFA1D34CC16000B8274 /* loading1.png */,
-				7F821CF81D34CB84000B8274 /* loading.png */,
+				187DB7F91D4B303F007CEB7C /* loading.png */,
 				7F87E0231D23BFDF00164F01 /* add1.png */,
 				7F725BBF1D2FF43400DA1CAC /* Ok-100.png */,
 				5A35D4A31C47B27400200076 /* luguhu.jpeg */,
@@ -567,12 +570,12 @@
 				5A35D4AA1C47B27400200076 /* luguhu.jpeg in Resources */,
 				5A35D4AC1C47B27400200076 /* mebubble@2x.png in Resources */,
 				7F4CD8391D29453D009A8E02 /* red.png in Resources */,
+				187DB7FA1D4B303F007CEB7C /* loading.png in Resources */,
 				7F3086BC1D27473600BB67DA /* micro6.png in Resources */,
 				5A35D4AE1C47B27400200076 /* xiaoming.png in Resources */,
 				7F4CD8401D294745009A8E02 /* gallery1.png in Resources */,
 				7F3086C21D274A5F00BB67DA /* microp7.png in Resources */,
 				7F72266C1D2B82B6007CDD2C /* watson8.png in Resources */,
-				7F821CFB1D34CC16000B8274 /* loading1.png in Resources */,
 				7F3086BA1D27460E00BB67DA /* keyword.png in Resources */,
 				7F2DCC861D26B92B00CD99EE /* add2.png in Resources */,
 				7FD9CDF71D2A9AAF006D3CD2 /* watsonlogo.jpeg in Resources */,
@@ -590,13 +593,13 @@
 				7F87E0241D23BFDF00164F01 /* add1.png in Resources */,
 				7F39DBB31D2E9D58004133C4 /* Robot 3-100-2.png in Resources */,
 				7F3086B61D273C0700BB67DA /* rainbow.png in Resources */,
-				7F821CF91D34CB84000B8274 /* loading.png in Resources */,
 				7F4CD8471D294E25009A8E02 /* green.png in Resources */,
 				7F3086C01D274A3300BB67DA /* cross24.png in Resources */,
 				7F4CD8451D294B88009A8E02 /* camera3.png in Resources */,
 				7F72267C1D2B8F06007CDD2C /* text129.png in Resources */,
 				7FD9CDF91D2AA740006D3CD2 /* watson1.jpg in Resources */,
 				7F72267E1D2B969D007CDD2C /* edit.png in Resources */,
+				187DB7F81D4B3020007CEB7C /* loading1.png in Resources */,
 				7F725BC21D2FF43800DA1CAC /* Ok-96.png in Resources */,
 				5A35D4AB1C47B27400200076 /* mebubble.png in Resources */,
 				7F7226721D2B879D007CDD2C /* watson11.png in Resources */,
@@ -677,6 +680,7 @@
 				7FEDB7BC1D2CEC2D0039544E /* EZAudioPlayer.m in Sources */,
 				7FEDB7B91D2CEC2D0039544E /* EZAudioFile.m in Sources */,
 				7FEDB7B81D2CEC2D0039544E /* EZAudioFFT.m in Sources */,
+				187DB7F61D4B2F03007CEB7C /* DetailViewController.swift in Sources */,
 				7FEDB7BF1D2CEC2D0039544E /* EZAudioUtilities.m in Sources */,
 				5A35D4B91C47B2BD00200076 /* ChatDataSource.swift in Sources */,
 			);
