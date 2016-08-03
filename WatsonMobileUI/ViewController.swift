@@ -60,19 +60,35 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         if ((notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue()) != nil {
             let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue()
             let keyboardheight  = keyboardSize!.height as CGFloat
-            let width = self.view.frame.size.width;
-            let height = self.view.frame.size.height;
-            let rect = CGRectMake(0.0, -keyboardheight,width,height);
-            self.view.frame = rect
+            
+            
+            let contentSize = tableView.contentSize
+            
+            if(self.view.frame.size.height-keyboardheight-50 < contentSize.height){
+                let tableViewWidth = tableView.frame.size.width;
+                let tableViewHeight = tableView.frame.size.height;
+                let tableViewRect = CGRectMake(0.0, -keyboardheight,tableViewWidth,tableViewHeight);
+                self.tableView.frame = tableViewRect
+            }
+            
+            let sendViewWidth = sendView.frame.size.width;
+            let sendViewHeight = sendView.frame.size.height;
+            let sendViewRect = CGRectMake(0.0, self.view.frame.size.height-keyboardheight-50,sendViewWidth,sendViewHeight)
+            self.sendView.frame = sendViewRect
         }
     }
     
     // 键盘显示事件view下移复位
     func keyboardWillHide(notification:NSNotification){
-        let width = self.view.frame.size.width;
-        let height = self.view.frame.size.height;
-        let rect = CGRectMake(0.0, 0,width,height);
-        self.view.frame = rect
+        let tableViewWidth = tableView.frame.size.width;
+        let tableViewHeight = tableView.frame.size.height;
+        let tableViewRect = CGRectMake(0.0, 20,tableViewWidth,tableViewHeight);
+        self.tableView.frame = tableViewRect
+        
+        let sendViewWidth = sendView.frame.size.width;
+        let sendViewHeight = sendView.frame.size.height;
+        let sendViewRect = CGRectMake(0.0, self.view.frame.size.height - 50,sendViewWidth,sendViewHeight)
+        self.sendView.frame = sendViewRect
     }
     
     // 文本消息view初期表示
