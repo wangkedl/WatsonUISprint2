@@ -44,7 +44,7 @@ class DetailViewController: UIViewController {
         let newImage = UIImage(data: urlData!)
         let imageView = UIImageView(image:newImage);
         //imageView.frame.origin = CGPoint(x: 0, y: 0)
-        imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, 300)
+        imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, 280)
         
         imageView.contentMode = UIViewContentMode.ScaleAspectFit
         
@@ -94,7 +94,7 @@ class DetailViewController: UIViewController {
         //通过数据流初始化图片
         let newImage1 = UIImage(data: urlData1!)
         let imageView1 = UIImageView(image:newImage1);
-        imageView1.frame = CGRectMake(50, imageView.frame.height+180, self.view.frame.size.width-100, 200)
+        imageView1.frame = CGRectMake(50, imageView.frame.height+170, self.view.frame.size.width-100, 200)
         
         imageView1.contentMode = UIViewContentMode.ScaleAspectFit
         mainView.addSubview(imageView1)
@@ -102,7 +102,7 @@ class DetailViewController: UIViewController {
         //创建一个ContactAdd类型的按钮
         let button:UIButton = UIButton(type:.System)
         //设置按钮位置和大小
-        button.frame=CGRectMake(self.view.frame.width/2 - 100, imageView.frame.height+400, 200, 30)
+        button.frame=CGRectMake(self.view.frame.width/2 - 100, imageView.frame.height+390, 200, 30)
         //设置按钮文字
         button.backgroundColor = UIColor.groupTableViewBackgroundColor()
         button.setTitle("Add to shopCat", forState:UIControlState.Normal)
@@ -114,6 +114,10 @@ class DetailViewController: UIViewController {
         
         self.view.addSubview(mainView)
         
+    }
+    
+    override func prefersStatusBarHidden()->Bool{
+        return true
     }
     
     func tapped(button:UIButton){

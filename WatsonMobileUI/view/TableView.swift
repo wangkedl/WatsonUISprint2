@@ -127,8 +127,6 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
         let detailView = DetailViewController()
         detailView.data = data.goods!
         self.window!.rootViewController!.presentViewController( detailView, animated: true, completion: nil )
-        
-        //self.window!.rootViewController!.navigationController?.pushViewController(detailView, animated:true)
 
     }
 
