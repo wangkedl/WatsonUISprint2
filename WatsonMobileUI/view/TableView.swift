@@ -121,12 +121,15 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
     }
         //选择一行
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-        print("goods Item selected")
+        //print("goods Item selected")
         
         let data:MessageItem = self.chatDataSource.chatTableView(self, dataForRow:indexPath.row)
-        let detailView = DetailViewController()
-        detailView.data = data.goods!
-        self.window!.rootViewController!.presentViewController( detailView, animated: true, completion: nil )
+        if (data.goods != nil) {
+            
+            let detailView = DetailViewController()
+            detailView.data = data.goods!
+            self.window!.rootViewController!.presentViewController( detailView, animated: true, completion: nil )
+        }
 
     }
 
