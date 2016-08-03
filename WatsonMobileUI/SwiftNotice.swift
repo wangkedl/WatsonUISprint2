@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 extension UIViewController {
     /// wait with your own animated images
     func pleaseWaitWithImages(imageNames: Array<UIImage>, timeInterval: Int) {
