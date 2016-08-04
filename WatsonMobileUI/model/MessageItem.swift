@@ -5,6 +5,7 @@ enum ChatType
     case Mine
     case Someone
     case GoodsList
+    case wrapline
 }
 
 class MessageItem
@@ -61,6 +62,11 @@ class MessageItem
     init(goods:Goods?, mtype:ChatType)
     {
         self.goods = goods
+        self.mtype = mtype
+    }
+    
+    init(mtype:ChatType)
+    {
         self.mtype = mtype
     }
 

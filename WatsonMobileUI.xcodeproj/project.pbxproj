@@ -33,6 +33,8 @@
 		7F2DCC8E1D26BC1300CD99EE /* mirco2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F2DCC8D1D26BC1300CD99EE /* mirco2.png */; };
 		7F2DCC901D26BF5E00CD99EE /* mirco4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F2DCC8F1D26BF5E00CD99EE /* mirco4.png */; };
 		7F2DCC921D26C4B400CD99EE /* miro5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F2DCC911D26C4B400CD99EE /* miro5.png */; };
+		7F30142D1D52D30400DA21FF /* TableViewWrapLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F30142C1D52D30400DA21FF /* TableViewWrapLineCell.swift */; };
+		7F30142F1D530EB400DA21FF /* watsonlogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F30142E1D530EB400DA21FF /* watsonlogo.jpeg */; };
 		7F3086B61D273C0700BB67DA /* rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3086B51D273C0700BB67DA /* rainbow.png */; };
 		7F3086B81D273DC400BB67DA /* femail.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3086B71D273DC400BB67DA /* femail.png */; };
 		7F3086BA1D27460E00BB67DA /* keyword.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3086B91D27460E00BB67DA /* keyword.png */; };
@@ -154,6 +156,8 @@
 		7F2DCC8D1D26BC1300CD99EE /* mirco2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mirco2.png; sourceTree = "<group>"; };
 		7F2DCC8F1D26BF5E00CD99EE /* mirco4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mirco4.png; sourceTree = "<group>"; };
 		7F2DCC911D26C4B400CD99EE /* miro5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miro5.png; sourceTree = "<group>"; };
+		7F30142C1D52D30400DA21FF /* TableViewWrapLineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewWrapLineCell.swift; sourceTree = "<group>"; };
+		7F30142E1D530EB400DA21FF /* watsonlogo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = watsonlogo.jpeg; path = ../../../watsonlogo.jpeg; sourceTree = "<group>"; };
 		7F3086B51D273C0700BB67DA /* rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbow.png; sourceTree = "<group>"; };
 		7F3086B71D273DC400BB67DA /* femail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = femail.png; sourceTree = "<group>"; };
 		7F3086B91D27460E00BB67DA /* keyword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyword.png; sourceTree = "<group>"; };
@@ -314,6 +318,7 @@
 			children = (
 				7F4007001D266331001C95DC /* message_left.png */,
 				7F87E0231D23BFDF00164F01 /* add1.png */,
+				7F30142E1D530EB400DA21FF /* watsonlogo.jpeg */,
 				7F45ACFE1D51D0F20086D51E /* loading1.png */,
 				7F725BBF1D2FF43400DA1CAC /* Ok-100.png */,
 				5A35D4A31C47B27400200076 /* luguhu.jpeg */,
@@ -387,6 +392,7 @@
 				5A35D4B31C47B29400200076 /* TableViewCell.swift */,
 				7FEDB5B71D2C9C100039544E /* TableViewGoodsCell.swift */,
 				7F2817821D2F832F00107B38 /* TableViewItemCell.swift */,
+				7F30142C1D52D30400DA21FF /* TableViewWrapLineCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -585,6 +591,7 @@
 				7F72266A1D2B7BCE007CDD2C /* watson7.jpg in Resources */,
 				7F39DBB51D2EA043004133C4 /* User Female-100.png in Resources */,
 				7F39DBAD1D2E9A23004133C4 /* Police.png in Resources */,
+				7F30142F1D530EB400DA21FF /* watsonlogo.jpeg in Resources */,
 				7F3086BE1D2747CB00BB67DA /* keyboard2.png in Resources */,
 				7F87E0281D23DCED00164F01 /* earth.png in Resources */,
 				7F87E0241D23BFDF00164F01 /* add1.png in Resources */,
@@ -653,6 +660,7 @@
 				7F821CF71D348CF4000B8274 /* Goods.swift in Sources */,
 				7FEDB7BA1D2CEC2D0039544E /* EZAudioFloatConverter.m in Sources */,
 				7FEDB7BB1D2CEC2D0039544E /* EZAudioFloatData.m in Sources */,
+				7F30142D1D52D30400DA21FF /* TableViewWrapLineCell.swift in Sources */,
 				5A35D4B51C47B29400200076 /* TableViewCell.swift in Sources */,
 				5A35D4BA1C47B2BD00200076 /* MessageItem.swift in Sources */,
 				7FEDB7BE1D2CEC2D0039544E /* EZAudioPlotGL.m in Sources */,

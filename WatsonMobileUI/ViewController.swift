@@ -358,7 +358,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         // 创建一个重用的单元格
         self.tableView!.registerClass(TableViewCell.self, forCellReuseIdentifier: "ChatCell")
         self.me = UserInfo(name:"user" ,logo:("UserFemale.png"))
-        self.Watson  = UserInfo(name:"watson", logo:("rainbow.png"))
+        self.Watson  = UserInfo(name:"watson", logo:("watsonlogo.jpeg"))
         
         let zero =  MessageItem(body:"Hi Dear,I'm watson,What can I do for you!", user:Watson,  date:NSDate(timeIntervalSinceNow:0), mtype:ChatType.Someone)
         
@@ -449,7 +449,10 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
                     let title:String = jsonData.objectForKey("title")! as! String
                     print(self.goodslist)
                     let wasonChat:MessageItem =  MessageItem(body:"\(title)", user:self.Watson, date:NSDate(), mtype:ChatType.Someone)
+                    let wrapline:MessageItem =  MessageItem(mtype:ChatType.wrapline)
+
                     self.Chats.addObject(wasonChat)
+                     self.Chats.addObject(wrapline)
                     
                     for i in 0..<self.goodslist.count{
                         let jsonGoodsData:AnyObject = self.goodslist[i]

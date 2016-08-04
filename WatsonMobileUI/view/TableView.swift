@@ -87,6 +87,13 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
             let cell = TableViewCell(data:data, reuseIdentifier:cellId)
             cell.backgroundColor = UIColor.clearColor()
             return cell
+        }else if(data.mtype == ChatType.wrapline){
+            let cellId = "wraplinecell"
+            let cell = TableViewWrapLineCell(reuseIdentifier:cellId)
+            cell.backgroundColor = UIColor.clearColor()
+            cell.selectionStyle = UITableViewCellSelectionStyle.None
+            return cell
+        
         }
          // 标准商品一览Cell
         else{
@@ -94,11 +101,12 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
             let cell = TableViewGoodsCell(data:data, reuseIdentifier: cellId)
             let goods:Goods = data.goods!
             cell.backgroundColor = UIColor.whiteColor()
+            cell.contentView.alpha = 0.9
             cell.layer.borderWidth = 0.5
             cell.layer.borderColor = UIColor.lightGrayColor().CGColor
             cell.textLabel!.text = goods.name
             cell.detailTextLabel?.text = goods.price
-            cell.detailTextLabel?.textColor = UIColor.redColor()
+            cell.detailTextLabel?.textColor = UIColor.blueColor()
             
             cell.imageView!.contentMode = UIViewContentMode.ScaleAspectFill
             cell.imageView!.image = UIImage(named :"loading1")
