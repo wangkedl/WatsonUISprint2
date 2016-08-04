@@ -27,7 +27,7 @@ class TableViewWrapLineCell: UITableViewCell {
             return super.frame
         }
         set (newFrame) {
-            super.frame = CGRectMake(newFrame.origin.x, newFrame.origin.y,newFrame.width, 40)
+            super.frame = CGRectMake(newFrame.origin.x, newFrame.origin.y,newFrame.width, 10)
         }
     }
     

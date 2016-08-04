@@ -436,13 +436,17 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
                         forControlEvents:UIControlEvents.TouchUpInside)
                     confirmButton.setImage(UIImage(named:"Ok-96.png"),forState:UIControlState.Normal)
                     self.confirmView.addSubview(confirmButton)
-                    
                     self.sendView.removeFromSuperview()
                     
-                    let tableViewWidth = self.tableView.frame.size.width;
-                    let tableViewHeight = self.tableView.frame.size.height;
-                    let tableViewRect = CGRectMake(0.0, -70,tableViewWidth,tableViewHeight)
-                    self.tableView.frame = tableViewRect
+                    let contentSize = self.tableView.contentSize
+                    
+                    if(self.view.frame.size.height-120 < contentSize.height){
+                        let tableViewWidth = self.tableView.frame.size.width;
+                        let tableViewHeight = self.tableView.frame.size.height;
+                        let tableViewRect = CGRectMake(0.0, -70,tableViewWidth,tableViewHeight);
+                        self.tableView.frame = tableViewRect
+                    }
+
                     
                 }else{
                     self.goodslist = jsonData.objectForKey("value")! as! NSArray
@@ -452,7 +456,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
                     let wrapline:MessageItem =  MessageItem(mtype:ChatType.wrapline)
 
                     self.Chats.addObject(wasonChat)
-                     self.Chats.addObject(wrapline)
+                    self.Chats.addObject(wrapline)
                     
                     for i in 0..<self.goodslist.count{
                         let jsonGoodsData:AnyObject = self.goodslist[i]
