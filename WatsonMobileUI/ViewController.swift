@@ -345,6 +345,8 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         return true
     }
     
+    
+    
     func initChatTableView()
     {
         let backGroundImage:UIImage  = UIImage(named:"watson11.png")!

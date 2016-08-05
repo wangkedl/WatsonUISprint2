@@ -27,7 +27,7 @@ class TableViewGoodsCell: UITableViewCell {
         set (newFrame) {
             var frame = newFrame
             frame.size.width = UIScreen.mainScreen().bounds.width
-            super.frame = CGRectMake(frame.origin.x + 55,frame.origin.y,frame.width-100,frame.height)
+            super.frame = CGRectMake(frame.origin.x+50,frame.origin.y,frame.width-100, frame.height)
         }
     }
     

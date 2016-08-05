@@ -72,6 +72,10 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
         var height:CGFloat = 40
         if(item.mtype == ChatType.Mine ||  item.mtype == ChatType.Someone){
             height  = item.insets!.top + max(item.view!.frame.size.height, 52) + item.insets!.bottom
+        }else if(item.mtype == ChatType.wrapline){
+            height = 20
+        }else if(item.mtype == ChatType.GoodsList){
+            height = 60
         }
         return height
     }
