@@ -114,6 +114,7 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
             
             cell.imageView!.contentMode = UIViewContentMode.ScaleAspectFill
             cell.imageView!.image = UIImage(named :"loading1")
+            cell.imageView?.frame = CGRectMake(20,5,55,55)
             
             let request = NSURLRequest(URL:NSURL.init(string: goods.imgurl)!)
             NSURLConnection.sendAsynchronousRequest(request, queue: thumbQueue, completionHandler: { response, data, error in
@@ -124,6 +125,7 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
                     let image = UIImage.init(data :data!)
                     dispatch_async(dispatch_get_main_queue(), {
                         cell.imageView!.image = image
+                        cell.imageView?.frame = CGRectMake(20,5,55,55)
                     })
                 }
             })
