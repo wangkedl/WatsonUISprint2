@@ -1,7 +1,11 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMicrophoneDelegate,EZRecorderDelegate, UIPickerViewDelegate, UIPickerViewDataSource{
+protocol RegisterDelegate{
+    func registerName(good : Goods)
+}
+
+class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMicrophoneDelegate,EZRecorderDelegate, UIPickerViewDelegate, UIPickerViewDataSource,RegisterDelegate{
     
     var Chats:NSMutableArray!
     var tableView:TableView!
@@ -30,6 +34,29 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
     var callWebServiceFlag:String!
     var currentIndex:Int!
     var currentViewName:String!
+    
+    // 购物列表
+    var addGoodArray = [Goods]()
+    
+    // 详细画面回调函数
+    func registerName(good:Goods) {
+        var isInCart:Bool = false
+        
+        // 判断是否已经加入购物车
+        for model in self.addGoodArray {
+            if model.id == good.id {
+                model.alreadyAddShoppingCart = true
+                model.count = model.count + 1
+                isInCart = true
+                break
+            }
+        }
+        
+        // 未加入购物车
+        if (isInCart == false) {
+            self.addGoodArray.append(good)
+        }
+    }
     
     override func viewDidLoad() {
         
@@ -321,11 +348,27 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         imageSelectView.addSubview(cameraButton)
         cameraButton.enabled = false
         
+        let cartButton = UIButton(frame:CGRectMake(130,6,35,35))
+        cartButton.alpha = 0.8
+        cartButton.addTarget(self, action:#selector(ViewController.showShoppingCartView) ,
+                               forControlEvents:UIControlEvents.TouchUpInside)
+        cartButton.setImage(UIImage(named:"cart"),forState:UIControlState.Normal)
+        imageSelectView.addSubview(cartButton)
+        cartButton.enabled = true
+        
+    }
+    
+    // 显示购物车画面
+    func showShoppingCartView(){
+        let shoppingCartVc = JFShoppingCartViewController()
+        // 传递商品模型数组
+        shoppingCartVc.addGoodArray = self.addGoodArray
+        // 模态出一个购物车控制器
+        presentViewController(UINavigationController(rootViewController: shoppingCartVc), animated: true, completion: nil)
     }
     
     // 隐藏图片选择View
-    func hiddenImageSelectView()
-    {
+    func hiddenImageSelectView(){
         let imageSelectView = self.view.viewWithTag(102)
         imageSelectView?.removeFromSuperview()
         
@@ -359,7 +402,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         
         // 创建一个重用的单元格
         self.tableView!.registerClass(TableViewCell.self, forCellReuseIdentifier: "ChatCell")
-        self.me = UserInfo(name:"user" ,logo:("UserFemale.png"))
+        self.me = UserInfo(name:"user" ,logo:("person.png"))
         self.Watson  = UserInfo(name:"watson", logo:("watsonlogo.jpeg"))
         
         let zero =  MessageItem(body:"Hi Dear,I'm watson,What can I do for you!", user:Watson,  date:NSDate(timeIntervalSinceNow:0), mtype:ChatType.Someone)
@@ -476,6 +519,9 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
                     }
                     self.tableView.chatDataSource = self
                     self.tableView.reloadData()
+                    
+                    //add
+                    //self.resendMessage("hi")
                 }
                 
             }else{
@@ -483,6 +529,13 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
                 
             }
         })
+    }
+    
+    //2次调用dialog
+    func resendMessage(text:String) -> Void{
+        let escapedString = text.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())
+        let url = "http://watsonserver.mybluemix.net/sample?text=" + escapedString!
+        sendTextMessage(url)
     }
     
     func sendVoiceMessage(urlString:String) ->  Void {
@@ -648,3 +701,6 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
     
     
 }
+
+
+   

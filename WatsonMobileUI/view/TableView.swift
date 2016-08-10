@@ -103,6 +103,7 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
         else{
             let cellId = "GoodsCell"
             let cell = TableViewGoodsCell(data:data, reuseIdentifier: cellId)
+            
             let goods:Goods = data.goods!
             cell.backgroundColor = UIColor.whiteColor()
             cell.contentView.alpha = 0.9
@@ -114,7 +115,7 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
             
             cell.imageView!.contentMode = UIViewContentMode.ScaleAspectFill
             cell.imageView!.image = UIImage(named :"loading1")
-            cell.imageView?.frame = CGRectMake(20,5,55,55)
+            cell.imageView?.frame = CGRectMake(20,5,75,55)
             
             let request = NSURLRequest(URL:NSURL.init(string: goods.imgurl)!)
             NSURLConnection.sendAsynchronousRequest(request, queue: thumbQueue, completionHandler: { response, data, error in
@@ -125,23 +126,29 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
                     let image = UIImage.init(data :data!)
                     dispatch_async(dispatch_get_main_queue(), {
                         cell.imageView!.image = image
-                        cell.imageView?.frame = CGRectMake(20,5,55,55)
+                        cell.imageView?.frame = CGRectMake(20,5,75,55)
                     })
                 }
             })
+            
             return cell
         }
         
     }
-        //选择一行
+    
+    
+    //选择一行
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
         //print("goods Item selected")
+        //tableView.delegate = self
         
         let data:MessageItem = self.chatDataSource.chatTableView(self, dataForRow:indexPath.row)
         if (data.goods != nil) {
             
             let detailView = DetailViewController()
+            detailView.delegate = (self.window!.rootViewController) as! ViewController
             detailView.data = data.goods!
+            
             self.window!.rootViewController!.presentViewController( detailView, animated: true, completion: nil )
         }
 

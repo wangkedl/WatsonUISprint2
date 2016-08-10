@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1812899A1D59BA9900DDBE14 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 181289991D59BA9900DDBE14 /* cart.png */; };
+		1875073F1D587ACE00EDCA68 /* floor_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 1875073E1D587ACE00EDCA68 /* floor_map.png */; };
+		187507431D587C5800EDCA68 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 187507421D587C5800EDCA68 /* people.png */; };
+		1875074B1D587EC300EDCA68 /* google_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 1875074A1D587EC300EDCA68 /* google_map.png */; };
+		187507531D588A1900EDCA68 /* JFShoppingCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507521D588A1900EDCA68 /* JFShoppingCartCell.swift */; };
+		187507551D588B7100EDCA68 /* JFShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507541D588B7100EDCA68 /* JFShoppingCartViewController.swift */; };
+		187507571D588F7600EDCA68 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 187507561D588F7600EDCA68 /* person.png */; };
+		187507591D58ADEB00EDCA68 /* loading110.png in Resources */ = {isa = PBXBuildFile; fileRef = 187507581D58ADEB00EDCA68 /* loading110.png */; };
+		187507EF1D59A0B800EDCA68 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507E11D59A0B800EDCA68 /* Constraint.swift */; };
+		187507F01D59A0B800EDCA68 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507E21D59A0B800EDCA68 /* ConstraintAttributes.swift */; };
+		187507F11D59A0B800EDCA68 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507E31D59A0B800EDCA68 /* ConstraintDescription.swift */; };
+		187507F21D59A0B800EDCA68 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507E41D59A0B800EDCA68 /* ConstraintItem.swift */; };
+		187507F31D59A0B800EDCA68 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507E51D59A0B800EDCA68 /* ConstraintMaker.swift */; };
+		187507F41D59A0B800EDCA68 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507E61D59A0B800EDCA68 /* ConstraintRelation.swift */; };
+		187507F51D59A0B800EDCA68 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507E71D59A0B800EDCA68 /* Debugging.swift */; };
+		187507F61D59A0B800EDCA68 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507E81D59A0B800EDCA68 /* EdgeInsets.swift */; };
+		187507F71D59A0B800EDCA68 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 187507E91D59A0B800EDCA68 /* Info.plist */; };
+		187507F81D59A0B800EDCA68 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507EA1D59A0B800EDCA68 /* LayoutConstraint.swift */; };
+		187507F91D59A0B800EDCA68 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507EC1D59A0B800EDCA68 /* SnapKit.swift */; };
+		187507FA1D59A0B800EDCA68 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507ED1D59A0B800EDCA68 /* View+SnapKit.swift */; };
+		187507FB1D59A0B800EDCA68 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187507EE1D59A0B800EDCA68 /* ViewController+SnapKit.swift */; };
+		187507FC1D59A30B00EDCA68 /* JSONKit.h in Sources */ = {isa = PBXBuildFile; fileRef = 7F28177D1D2F785900107B38 /* JSONKit.h */; };
 		187DB7F61D4B2F03007CEB7C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DB7F51D4B2F03007CEB7C /* DetailViewController.swift */; };
 		5A35D4751C47B25600200076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A35D4741C47B25600200076 /* AppDelegate.swift */; };
 		5A35D4771C47B25600200076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A35D4761C47B25600200076 /* ViewController.swift */; };
@@ -26,8 +48,6 @@
 		5A35D4BA1C47B2BD00200076 /* MessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A35D4B81C47B2BD00200076 /* MessageItem.swift */; };
 		5A35D4BC1C47B2F000200076 /* TableHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A35D4BB1C47B2F000200076 /* TableHeaderViewCell.swift */; };
 		5A35D4BE1C47B30100200076 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A35D4BD1C47B30100200076 /* UserInfo.swift */; };
-		7F269A401D542CA50069F890 /* floor_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F269A3F1D542CA50069F890 /* floor_map.png */; };
-		7F269A441D5431360069F890 /* arrow180.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F269A431D5431360069F890 /* arrow180.png */; };
 		7F28177F1D2F785900107B38 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F28177E1D2F785900107B38 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7F2817831D2F832F00107B38 /* TableViewItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2817821D2F832F00107B38 /* TableViewItemCell.swift */; };
 		7F2DCC861D26B92B00CD99EE /* add2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F2DCC851D26B92B00CD99EE /* add2.png */; };
@@ -36,7 +56,6 @@
 		7F2DCC901D26BF5E00CD99EE /* mirco4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F2DCC8F1D26BF5E00CD99EE /* mirco4.png */; };
 		7F2DCC921D26C4B400CD99EE /* miro5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F2DCC911D26C4B400CD99EE /* miro5.png */; };
 		7F30142D1D52D30400DA21FF /* TableViewWrapLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F30142C1D52D30400DA21FF /* TableViewWrapLineCell.swift */; };
-		7F30142F1D530EB400DA21FF /* watsonlogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F30142E1D530EB400DA21FF /* watsonlogo.jpeg */; };
 		7F3086B61D273C0700BB67DA /* rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3086B51D273C0700BB67DA /* rainbow.png */; };
 		7F3086B81D273DC400BB67DA /* femail.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3086B71D273DC400BB67DA /* femail.png */; };
 		7F3086BA1D27460E00BB67DA /* keyword.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3086B91D27460E00BB67DA /* keyword.png */; };
@@ -56,7 +75,6 @@
 		7F39DBB71D2EA1D0004133C4 /* Robot 3 Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F39DBB61D2EA1D0004133C4 /* Robot 3 Filled-100.png */; };
 		7F4007011D266331001C95DC /* message_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4007001D266331001C95DC /* message_left.png */; };
 		7F4007031D26633F001C95DC /* message_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4007021D26633F001C95DC /* message_right.png */; };
-		7F45ACFF1D51D0F20086D51E /* loading1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F45ACFE1D51D0F20086D51E /* loading1.png */; };
 		7F4CD8391D29453D009A8E02 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CD8381D29453D009A8E02 /* red.png */; };
 		7F4CD83B1D294545009A8E02 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CD83A1D294545009A8E02 /* yellow.png */; };
 		7F4CD8401D294745009A8E02 /* gallery1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CD83C1D294745009A8E02 /* gallery1.png */; };
@@ -127,6 +145,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181289991D59BA9900DDBE14 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		1875073E1D587ACE00EDCA68 /* floor_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = floor_map.png; sourceTree = "<group>"; };
+		187507421D587C5800EDCA68 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
+		1875074A1D587EC300EDCA68 /* google_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google_map.png; sourceTree = "<group>"; };
+		187507521D588A1900EDCA68 /* JFShoppingCartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFShoppingCartCell.swift; sourceTree = "<group>"; };
+		187507541D588B7100EDCA68 /* JFShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFShoppingCartViewController.swift; sourceTree = "<group>"; };
+		187507561D588F7600EDCA68 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		187507581D58ADEB00EDCA68 /* loading110.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading110.png; sourceTree = "<group>"; };
+		187507E11D59A0B800EDCA68 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		187507E21D59A0B800EDCA68 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		187507E31D59A0B800EDCA68 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		187507E41D59A0B800EDCA68 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		187507E51D59A0B800EDCA68 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		187507E61D59A0B800EDCA68 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		187507E71D59A0B800EDCA68 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		187507E81D59A0B800EDCA68 /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
+		187507E91D59A0B800EDCA68 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187507EA1D59A0B800EDCA68 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		187507EB1D59A0B800EDCA68 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		187507EC1D59A0B800EDCA68 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		187507ED1D59A0B800EDCA68 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
+		187507EE1D59A0B800EDCA68 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
 		187DB7F51D4B2F03007CEB7C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5A35D4711C47B25600200076 /* WatsonMobileUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonMobileUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A35D4741C47B25600200076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,7 +190,6 @@
 		5A35D4B81C47B2BD00200076 /* MessageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageItem.swift; sourceTree = "<group>"; };
 		5A35D4BB1C47B2F000200076 /* TableHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderViewCell.swift; sourceTree = "<group>"; };
 		5A35D4BD1C47B30100200076 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		7F269A3F1D542CA50069F890 /* floor_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = floor_map.png; path = ../../../floor_map.png; sourceTree = "<group>"; };
 		7F269A431D5431360069F890 /* arrow180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow180.png; path = ../../../arrow180.png; sourceTree = "<group>"; };
 		7F28177D1D2F785900107B38 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		7F28177E1D2F785900107B38 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
@@ -278,6 +317,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1875077B1D59A00000EDCA68 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				187507E01D59A0B800EDCA68 /* Source */,
+			);
+			name = SnapKit;
+			sourceTree = "<group>";
+		};
+		187507E01D59A0B800EDCA68 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				187507E11D59A0B800EDCA68 /* Constraint.swift */,
+				187507E21D59A0B800EDCA68 /* ConstraintAttributes.swift */,
+				187507E31D59A0B800EDCA68 /* ConstraintDescription.swift */,
+				187507E41D59A0B800EDCA68 /* ConstraintItem.swift */,
+				187507E51D59A0B800EDCA68 /* ConstraintMaker.swift */,
+				187507E61D59A0B800EDCA68 /* ConstraintRelation.swift */,
+				187507E71D59A0B800EDCA68 /* Debugging.swift */,
+				187507E81D59A0B800EDCA68 /* EdgeInsets.swift */,
+				187507E91D59A0B800EDCA68 /* Info.plist */,
+				187507EA1D59A0B800EDCA68 /* LayoutConstraint.swift */,
+				187507EB1D59A0B800EDCA68 /* SnapKit.h */,
+				187507EC1D59A0B800EDCA68 /* SnapKit.swift */,
+				187507ED1D59A0B800EDCA68 /* View+SnapKit.swift */,
+				187507EE1D59A0B800EDCA68 /* ViewController+SnapKit.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		5A35D4681C47B25600200076 = {
 			isa = PBXGroup;
 			children = (
@@ -299,12 +367,14 @@
 		5A35D4731C47B25600200076 /* WatsonMobileUI */ = {
 			isa = PBXGroup;
 			children = (
+				1875077B1D59A00000EDCA68 /* SnapKit */,
 				7F2817731D2F714300107B38 /* swiftJson */,
 				5A35D4B61C47B2BD00200076 /* model */,
 				5A35D4B11C47B29400200076 /* view */,
 				5A35D4A21C47B27400200076 /* images */,
 				5A35D4741C47B25600200076 /* AppDelegate.swift */,
 				5A35D4761C47B25600200076 /* ViewController.swift */,
+				187507541D588B7100EDCA68 /* JFShoppingCartViewController.swift */,
 				187DB7F51D4B2F03007CEB7C /* DetailViewController.swift */,
 				5A35D4781C47B25600200076 /* Main.storyboard */,
 				5A35D47B1C47B25600200076 /* Assets.xcassets */,
@@ -320,8 +390,12 @@
 		5A35D4A21C47B27400200076 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				181289991D59BA9900DDBE14 /* cart.png */,
+				187507561D588F7600EDCA68 /* person.png */,
+				1875074A1D587EC300EDCA68 /* google_map.png */,
+				187507421D587C5800EDCA68 /* people.png */,
+				1875073E1D587ACE00EDCA68 /* floor_map.png */,
 				7F269A431D5431360069F890 /* arrow180.png */,
-				7F269A3F1D542CA50069F890 /* floor_map.png */,
 				7F4007001D266331001C95DC /* message_left.png */,
 				7F87E0231D23BFDF00164F01 /* add1.png */,
 				7F30142E1D530EB400DA21FF /* watsonlogo.jpeg */,
@@ -334,13 +408,13 @@
 				7F72267F1D2B980F007CDD2C /* pictures.png */,
 				7F7226811D2B98D1007CDD2C /* photo189.png */,
 				7F39DBAA1D2E9A04004133C4 /* Reddit-80.png */,
+				7F3086C31D27BDC500BB67DA /* b5.png */,
 				7F39DBAE1D2E9A3A004133C4 /* UserFemale.png */,
 				7F39DBB01D2E9CA3004133C4 /* Robot 3-80.png */,
 				7F72267D1D2B969D007CDD2C /* edit.png */,
 				7F5F7C7F1D2DF4B6005FE5E8 /* add.png */,
 				7F39DBB41D2EA043004133C4 /* User Female-100.png */,
 				7F39DBB21D2E9D58004133C4 /* Robot 3-100-2.png */,
-				7F3086C31D27BDC500BB67DA /* b5.png */,
 				7F72266D1D2B858A007CDD2C /* watson9.jpg */,
 				7FD9CDF61D2A9AAF006D3CD2 /* watsonlogo.jpeg */,
 				7F7226631D2B4AA2007CDD2C /* watson3.jpg */,
@@ -365,6 +439,7 @@
 				7F7226691D2B7BCE007CDD2C /* watson7.jpg */,
 				7F2DCC8D1D26BC1300CD99EE /* mirco2.png */,
 				7F3086BF1D274A3300BB67DA /* cross24.png */,
+				187507581D58ADEB00EDCA68 /* loading110.png */,
 				7F7226771D2B8E46007CDD2C /* micro20.png */,
 				7F7226791D2B8E7E007CDD2C /* micro21.png */,
 				7F3086BB1D27473600BB67DA /* micro6.png */,
@@ -393,6 +468,7 @@
 		5A35D4B11C47B29400200076 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				187507521D588A1900EDCA68 /* JFShoppingCartCell.swift */,
 				5A35D4B21C47B29400200076 /* TableView.swift */,
 				5A35D4BB1C47B2F000200076 /* TableHeaderViewCell.swift */,
 				5A35D4B31C47B29400200076 /* TableViewCell.swift */,
@@ -579,7 +655,6 @@
 				5A35D4AA1C47B27400200076 /* luguhu.jpeg in Resources */,
 				5A35D4AC1C47B27400200076 /* mebubble@2x.png in Resources */,
 				7F4CD8391D29453D009A8E02 /* red.png in Resources */,
-				7F45ACFF1D51D0F20086D51E /* loading1.png in Resources */,
 				7F3086BC1D27473600BB67DA /* micro6.png in Resources */,
 				5A35D4AE1C47B27400200076 /* xiaoming.png in Resources */,
 				7F4CD8401D294745009A8E02 /* gallery1.png in Resources */,
@@ -589,17 +664,19 @@
 				7F2DCC861D26B92B00CD99EE /* add2.png in Resources */,
 				7FD9CDF71D2A9AAF006D3CD2 /* watsonlogo.jpeg in Resources */,
 				7F39DBB71D2EA1D0004133C4 /* Robot 3 Filled-100.png in Resources */,
+				187507431D587C5800EDCA68 /* people.png in Resources */,
 				7F7226661D2B5988007CDD2C /* Watson4.jpg in Resources */,
 				7F4CD8421D294745009A8E02 /* camera1.png in Resources */,
 				7F39DBAF1D2E9A3A004133C4 /* UserFemale.png in Resources */,
+				187507F71D59A0B800EDCA68 /* Info.plist in Resources */,
+				187507591D58ADEB00EDCA68 /* loading110.png in Resources */,
 				7F87E0261D23C30600164F01 /* mirco.png in Resources */,
 				7F7226711D2B879D007CDD2C /* watson10.jpg in Resources */,
 				7F72266A1D2B7BCE007CDD2C /* watson7.jpg in Resources */,
 				7F39DBB51D2EA043004133C4 /* User Female-100.png in Resources */,
-				7F269A401D542CA50069F890 /* floor_map.png in Resources */,
 				7F39DBAD1D2E9A23004133C4 /* Police.png in Resources */,
-				7F30142F1D530EB400DA21FF /* watsonlogo.jpeg in Resources */,
 				7F3086BE1D2747CB00BB67DA /* keyboard2.png in Resources */,
+				1812899A1D59BA9900DDBE14 /* cart.png in Resources */,
 				7F87E0281D23DCED00164F01 /* earth.png in Resources */,
 				7F87E0241D23BFDF00164F01 /* add1.png in Resources */,
 				7F39DBB31D2E9D58004133C4 /* Robot 3-100-2.png in Resources */,
@@ -616,6 +693,7 @@
 				7F4CD8411D294745009A8E02 /* gallery.png in Resources */,
 				7F4CD8431D294745009A8E02 /* camera.png in Resources */,
 				7F2DCC8E1D26BC1300CD99EE /* mirco2.png in Resources */,
+				1875074B1D587EC300EDCA68 /* google_map.png in Resources */,
 				7F7226821D2B98D1007CDD2C /* photo189.png in Resources */,
 				7F2DCC921D26C4B400CD99EE /* miro5.png in Resources */,
 				7F7226781D2B8E46007CDD2C /* micro20.png in Resources */,
@@ -628,11 +706,12 @@
 				7F7226761D2B8920007CDD2C /* wifi75.png in Resources */,
 				7F7226741D2B884D007CDD2C /* more16.png in Resources */,
 				7F7226801D2B980F007CDD2C /* pictures.png in Resources */,
+				1875073F1D587ACE00EDCA68 /* floor_map.png in Resources */,
 				7F725BC01D2FF43400DA1CAC /* Ok-100.png in Resources */,
+				187507571D588F7600EDCA68 /* person.png in Resources */,
 				7F4CD83B1D294545009A8E02 /* yellow.png in Resources */,
 				7F2DCC8C1D26BAE200CD99EE /* add3.png in Resources */,
 				7F5F7C801D2DF4B6005FE5E8 /* add.png in Resources */,
-				7F269A441D5431360069F890 /* arrow180.png in Resources */,
 				7F7226681D2B5BC2007CDD2C /* watson5.jpg in Resources */,
 				7F7226641D2B4AA2007CDD2C /* watson3.jpg in Resources */,
 				7F3086B81D273DC400BB67DA /* femail.png in Resources */,
@@ -664,16 +743,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187507FC1D59A30B00EDCA68 /* JSONKit.h in Sources */,
 				5A35D4771C47B25600200076 /* ViewController.swift in Sources */,
 				7F821CF71D348CF4000B8274 /* Goods.swift in Sources */,
+				187507F81D59A0B800EDCA68 /* LayoutConstraint.swift in Sources */,
 				7FEDB7BA1D2CEC2D0039544E /* EZAudioFloatConverter.m in Sources */,
+				187507F21D59A0B800EDCA68 /* ConstraintItem.swift in Sources */,
 				7FEDB7BB1D2CEC2D0039544E /* EZAudioFloatData.m in Sources */,
 				7F30142D1D52D30400DA21FF /* TableViewWrapLineCell.swift in Sources */,
+				187507F41D59A0B800EDCA68 /* ConstraintRelation.swift in Sources */,
 				5A35D4B51C47B29400200076 /* TableViewCell.swift in Sources */,
 				5A35D4BA1C47B2BD00200076 /* MessageItem.swift in Sources */,
 				7FEDB7BE1D2CEC2D0039544E /* EZAudioPlotGL.m in Sources */,
 				7FEDB7C31D2CEC2D0039544E /* EZRecorder.m in Sources */,
+				187507F01D59A0B800EDCA68 /* ConstraintAttributes.swift in Sources */,
+				187507FB1D59A0B800EDCA68 /* ViewController+SnapKit.swift in Sources */,
 				7FEDB7C11D2CEC2D0039544E /* EZOutput.m in Sources */,
+				187507551D588B7100EDCA68 /* JFShoppingCartViewController.swift in Sources */,
 				7FEDB7B61D2CEC2D0039544E /* EZAudioDevice.m in Sources */,
 				5A35D4B41C47B29400200076 /* TableView.swift in Sources */,
 				7FEDB7C21D2CEC2D0039544E /* EZPlot.m in Sources */,
@@ -684,14 +770,22 @@
 				5A35D4BE1C47B30100200076 /* UserInfo.swift in Sources */,
 				7FEDB7BD1D2CEC2D0039544E /* EZAudioPlot.m in Sources */,
 				5A35D4751C47B25600200076 /* AppDelegate.swift in Sources */,
+				187507F31D59A0B800EDCA68 /* ConstraintMaker.swift in Sources */,
 				7FEDB7B51D2CEC2D0039544E /* EZAudio.m in Sources */,
+				187507F11D59A0B800EDCA68 /* ConstraintDescription.swift in Sources */,
 				7F3086C81D27E8A700BB67DA /* SwiftNotice.swift in Sources */,
+				187507EF1D59A0B800EDCA68 /* Constraint.swift in Sources */,
 				5A35D4BC1C47B2F000200076 /* TableHeaderViewCell.swift in Sources */,
 				7F28177F1D2F785900107B38 /* JSONKit.m in Sources */,
 				7FEDB7C51D2CEC2D0039544E /* TPCircularBuffer.c in Sources */,
+				187507F61D59A0B800EDCA68 /* EdgeInsets.swift in Sources */,
+				187507F51D59A0B800EDCA68 /* Debugging.swift in Sources */,
+				187507531D588A1900EDCA68 /* JFShoppingCartCell.swift in Sources */,
 				7FEDB7BC1D2CEC2D0039544E /* EZAudioPlayer.m in Sources */,
+				187507F91D59A0B800EDCA68 /* SnapKit.swift in Sources */,
 				7FEDB7B91D2CEC2D0039544E /* EZAudioFile.m in Sources */,
 				7FEDB7B81D2CEC2D0039544E /* EZAudioFFT.m in Sources */,
+				187507FA1D59A0B800EDCA68 /* View+SnapKit.swift in Sources */,
 				187DB7F61D4B2F03007CEB7C /* DetailViewController.swift in Sources */,
 				7FEDB7BF1D2CEC2D0039544E /* EZAudioUtilities.m in Sources */,
 				5A35D4B91C47B2BD00200076 /* ChatDataSource.swift in Sources */,
