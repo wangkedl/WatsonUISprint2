@@ -337,7 +337,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         localImageButton.addTarget(self, action:#selector(ViewController.changMessageViewToVoiceView) ,
                                    forControlEvents:UIControlEvents.TouchUpInside)
         localImageButton.setImage(UIImage(named:"pictures"),forState:UIControlState.Normal)
-        imageSelectView.addSubview(localImageButton)
+        //imageSelectView.addSubview(localImageButton)
         localImageButton.enabled = false
         
         let cameraButton = UIButton(frame:CGRectMake(70,6,35,35))
@@ -345,10 +345,10 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         cameraButton.addTarget(self, action:#selector(ViewController.showOrHiddenImageSelectView) ,
                                forControlEvents:UIControlEvents.TouchUpInside)
         cameraButton.setImage(UIImage(named:"photo189"),forState:UIControlState.Normal)
-        imageSelectView.addSubview(cameraButton)
+        //imageSelectView.addSubview(cameraButton)
         cameraButton.enabled = false
         
-        let cartButton = UIButton(frame:CGRectMake(130,6,35,35))
+        let cartButton = UIButton(frame:CGRectMake(10,6,35,35))
         cartButton.alpha = 0.8
         cartButton.addTarget(self, action:#selector(ViewController.showShoppingCartView) ,
                                forControlEvents:UIControlEvents.TouchUpInside)
@@ -405,7 +405,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         self.me = UserInfo(name:"user" ,logo:("person.png"))
         self.Watson  = UserInfo(name:"watson", logo:("watsonlogo.jpeg"))
         
-        let zero =  MessageItem(body:"Hi Dear,I'm watson,What can I do for you!", user:Watson,  date:NSDate(timeIntervalSinceNow:0), mtype:ChatType.Someone)
+        let zero =  MessageItem(body:"Hi Dear, I'm watson,What can I do for you!", user:Watson,  date:NSDate(timeIntervalSinceNow:0), mtype:ChatType.Someone)
         
         self.Chats = NSMutableArray()
         self.Chats.addObjectsFromArray([zero])
@@ -521,7 +521,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
                     self.tableView.reloadData()
                     
                     //add
-                    //self.resendMessage("hi")
+                    self.resendMessage("hi")
                 }
                 
             }else{
@@ -533,6 +533,11 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
     
     //2次调用dialog
     func resendMessage(text:String) -> Void{
+        let mineChat =  MessageItem(mtype: ChatType.wrapline)
+        self.Chats.addObject(mineChat)
+        self.tableView.chatDataSource = self
+        self.tableView.reloadData()
+        
         let escapedString = text.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())
         let url = "http://watsonserver.mybluemix.net/sample?text=" + escapedString!
         sendTextMessage(url)

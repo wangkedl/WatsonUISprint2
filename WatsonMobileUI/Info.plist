@@ -5,11 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Watson小T</string>
+	<string>Watson-Talk</string>
 	<key>CFBundleExecutable</key>
 	<string>WatsonMobileUI</string>
 	<key>CFBundleGetInfoString</key>
 	<string></string>
+	<key>CFBundleIcons</key>
+	<dict/>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>

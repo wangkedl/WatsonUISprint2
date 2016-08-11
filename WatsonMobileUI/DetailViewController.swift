@@ -34,8 +34,8 @@ class DetailViewController: UIViewController {
         //图片
         let thumbQueue = NSOperationQueue()
         let newImage = UIImage(named:"loading110.png")!
-        let imageView = UIImageView(image:newImage);
-        imageView.frame = CGRectMake(50, 20, self.view.frame.size.width-100, 240)
+        let iconImageView = UIImageView(image:newImage);
+        iconImageView.frame = CGRectMake(50, 20, self.view.frame.size.width-100, 240)
         
         let request = NSURLRequest(URL:NSURL.init(string: data!.imgurl)!)
         NSURLConnection.sendAsynchronousRequest(request, queue: thumbQueue, completionHandler: { response, data, error in
@@ -45,15 +45,15 @@ class DetailViewController: UIViewController {
             } else {
                 let image = UIImage.init(data :data!)
                 dispatch_async(dispatch_get_main_queue(), {
-                    imageView.image = image
-                    imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, 280)
+                    iconImageView.image = image
+                    iconImageView.frame = CGRectMake(0, 0, self.view.frame.size.width, 280)
                     
                 })
             }
         })
         
-        imageView.contentMode = UIViewContentMode.ScaleAspectFit
-        mainView.addSubview(imageView)
+        iconImageView.contentMode = UIViewContentMode.ScaleAspectFit
+        mainView.addSubview(iconImageView)
 
         //商品名称
         let imgHight:CGFloat = 280
@@ -117,7 +117,7 @@ class DetailViewController: UIViewController {
         
         let txtLocation: UILabel = UILabel()
         txtLocation.frame = CGRect(x:5, y:imgHight+95, width:(self.view.frame.size.width-10), height:20)
-        txtLocation.text = "Please follow the map of below to find this good."
+        txtLocation.text = "Please follow the map of below to find this goods."
         txtLocation.backgroundColor = UIColor.whiteColor()
         txtLocation.textAlignment = NSTextAlignment.Left
         txtLocation.font = UIFont(name:"HelveticaNeue", size:15)

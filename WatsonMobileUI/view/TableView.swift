@@ -109,14 +109,18 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
             cell.contentView.alpha = 0.9
             cell.layer.borderWidth = 0.5
             cell.layer.borderColor = UIColor.lightGrayColor().CGColor
+            
             cell.textLabel!.text = goods.name
             cell.detailTextLabel?.text = goods.price
             cell.detailTextLabel?.textColor = UIColor.blueColor()
             
-            cell.imageView!.contentMode = UIViewContentMode.ScaleAspectFill
-            cell.imageView!.image = UIImage(named :"loading1")
-            cell.imageView?.frame = CGRectMake(20,5,75,55)
-            
+            /*
+            /// loadImage
+            cell.imageView?.image = UIImage(named :"loading110")
+            cell.imageView?.frame = CGRectMake(20,2,85,55)
+            cell.imageView?.contentMode = UIViewContentMode.ScaleAspectFill
+            */
+ 
             let request = NSURLRequest(URL:NSURL.init(string: goods.imgurl)!)
             NSURLConnection.sendAsynchronousRequest(request, queue: thumbQueue, completionHandler: { response, data, error in
                 if (error != nil) {
@@ -125,8 +129,7 @@ class TableView:UITableView,UITableViewDelegate, UITableViewDataSource
                 } else {
                     let image = UIImage.init(data :data!)
                     dispatch_async(dispatch_get_main_queue(), {
-                        cell.imageView!.image = image
-                        cell.imageView?.frame = CGRectMake(20,5,75,55)
+                        cell.imageView?.image = image
                     })
                 }
             })

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1812899A1D59BA9900DDBE14 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 181289991D59BA9900DDBE14 /* cart.png */; };
+		1812899C1D5C44B700DDBE14 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1812899B1D5C44B700DDBE14 /* icon.png */; };
 		1875073F1D587ACE00EDCA68 /* floor_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 1875073E1D587ACE00EDCA68 /* floor_map.png */; };
 		187507431D587C5800EDCA68 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 187507421D587C5800EDCA68 /* people.png */; };
 		1875074B1D587EC300EDCA68 /* google_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 1875074A1D587EC300EDCA68 /* google_map.png */; };
@@ -146,6 +147,7 @@
 
 /* Begin PBXFileReference section */
 		181289991D59BA9900DDBE14 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		1812899B1D5C44B700DDBE14 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		1875073E1D587ACE00EDCA68 /* floor_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = floor_map.png; sourceTree = "<group>"; };
 		187507421D587C5800EDCA68 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
 		1875074A1D587EC300EDCA68 /* google_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google_map.png; sourceTree = "<group>"; };
@@ -390,6 +392,7 @@
 		5A35D4A21C47B27400200076 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1812899B1D5C44B700DDBE14 /* icon.png */,
 				181289991D59BA9900DDBE14 /* cart.png */,
 				187507561D588F7600EDCA68 /* person.png */,
 				1875074A1D587EC300EDCA68 /* google_map.png */,
@@ -608,7 +611,7 @@
 				TargetAttributes = {
 					5A35D4701C47B25600200076 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = C5SR8TD32J;
+						DevelopmentTeam = AF56KM68K2;
 					};
 					5A35D4841C47B25600200076 = {
 						CreatedOnToolsVersion = 7.2;
@@ -652,6 +655,7 @@
 				7F4007011D266331001C95DC /* message_left.png in Resources */,
 				5A35D4AF1C47B27400200076 /* yoububble.png in Resources */,
 				5A35D47F1C47B25600200076 /* LaunchScreen.storyboard in Resources */,
+				1812899C1D5C44B700DDBE14 /* icon.png in Resources */,
 				5A35D4AA1C47B27400200076 /* luguhu.jpeg in Resources */,
 				5A35D4AC1C47B27400200076 /* mebubble@2x.png in Resources */,
 				7F4CD8391D29453D009A8E02 /* red.png in Resources */,
