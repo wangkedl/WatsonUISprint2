@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1812899A1D59BA9900DDBE14 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 181289991D59BA9900DDBE14 /* cart.png */; };
 		1812899C1D5C44B700DDBE14 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1812899B1D5C44B700DDBE14 /* icon.png */; };
+		1812899E1D5C6D9900DDBE14 /* fukujyuen_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1812899D1D5C6D9900DDBE14 /* fukujyuen_photo.jpg */; };
 		1875073F1D587ACE00EDCA68 /* floor_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 1875073E1D587ACE00EDCA68 /* floor_map.png */; };
 		187507431D587C5800EDCA68 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 187507421D587C5800EDCA68 /* people.png */; };
 		1875074B1D587EC300EDCA68 /* google_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 1875074A1D587EC300EDCA68 /* google_map.png */; };
@@ -148,6 +149,7 @@
 /* Begin PBXFileReference section */
 		181289991D59BA9900DDBE14 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
 		1812899B1D5C44B700DDBE14 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		1812899D1D5C6D9900DDBE14 /* fukujyuen_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fukujyuen_photo.jpg; sourceTree = "<group>"; };
 		1875073E1D587ACE00EDCA68 /* floor_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = floor_map.png; sourceTree = "<group>"; };
 		187507421D587C5800EDCA68 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
 		1875074A1D587EC300EDCA68 /* google_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google_map.png; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 		5A35D4A21C47B27400200076 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1812899D1D5C6D9900DDBE14 /* fukujyuen_photo.jpg */,
 				1812899B1D5C44B700DDBE14 /* icon.png */,
 				181289991D59BA9900DDBE14 /* cart.png */,
 				187507561D588F7600EDCA68 /* person.png */,
@@ -699,6 +702,7 @@
 				7F2DCC8E1D26BC1300CD99EE /* mirco2.png in Resources */,
 				1875074B1D587EC300EDCA68 /* google_map.png in Resources */,
 				7F7226821D2B98D1007CDD2C /* photo189.png in Resources */,
+				1812899E1D5C6D9900DDBE14 /* fukujyuen_photo.jpg in Resources */,
 				7F2DCC921D26C4B400CD99EE /* miro5.png in Resources */,
 				7F7226781D2B8E46007CDD2C /* micro20.png in Resources */,
 				7F72267A1D2B8E7E007CDD2C /* micro21.png in Resources */,
