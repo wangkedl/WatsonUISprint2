@@ -2,8 +2,8 @@
 //  DetailViewController.swift
 //  WatsonMobileUI
 //
-//  Created by apple on 16/7/22.
-//  Copyright © 2016年 hangge.com. All rights reserved.
+//  Created by liuke on 16/7/22.
+//  Copyright © 2016. All rights reserved.
 //
 
 import UIKit
@@ -36,18 +36,16 @@ class DetailViewController: UIViewController {
         let newImage = UIImage(named:"loading110.png")!
         let iconImageView = UIImageView(image:newImage);
         iconImageView.frame = CGRectMake(50, 20, self.view.frame.size.width-100, 240)
-        
+        // 异步加载网络图片
         let request = NSURLRequest(URL:NSURL.init(string: data!.imgurl)!)
         NSURLConnection.sendAsynchronousRequest(request, queue: thumbQueue, completionHandler: { response, data, error in
             if (error != nil) {
                 print(error)
-                
             } else {
                 let image = UIImage.init(data :data!)
                 dispatch_async(dispatch_get_main_queue(), {
                     iconImageView.image = image
                     iconImageView.frame = CGRectMake(0, 0, self.view.frame.size.width, 280)
-                    
                 })
             }
         })
@@ -72,8 +70,7 @@ class DetailViewController: UIViewController {
         labelPrice.textAlignment = NSTextAlignment.Center
         labelPrice.highlighted = true
         labelPrice.font = UIFont(name:"HelveticaNeue", size:25)
-        labelPrice.adjustsFontSizeToFitWidth=true //自适应宽度
-        //labelPrice.backgroundColor = UIColor.orangeColor()
+        labelPrice.adjustsFontSizeToFitWidth=true
         labelPrice.textColor=UIColor.redColor()
         mainView.addSubview(labelPrice)
         
@@ -95,28 +92,15 @@ class DetailViewController: UIViewController {
         verticalLine.backgroundColor = UIColor.grayColor()
         mainView.addSubview(verticalLine)
         
-        /*
         //横线
         let horizontalLine = UIView()
-        horizontalLine.frame = CGRect(x:5, y:imageView.frame.height+92, width:self.view.frame.size.width-10, height:1)
-        horizontalLine.backgroundColor = UIColor.grayColor()
+        horizontalLine.frame = CGRect(x:10, y:imgHight+95, width:self.view.frame.size.width-20, height:1.5)
+        horizontalLine.backgroundColor = UIColor.purpleColor()
         mainView.addSubview(horizontalLine)
-        */
-
-        /*
-        let turl = "http://www.100bangai.co.jp/wp-content/themes/twentyfifteen/images/floor_map_ant.png"
         
-        //定义NSURL对象
-        let mapUrl = NSURL(string: turl)
-        //从网络获取数据流
-        let mapUrlData = NSData(contentsOfURL: mapUrl!)
-        //通过数据流初始化图片
-        let mapImage = UIImage(data: mapUrlData!)
-        let mapImageView = UIImageView(image:mapImage);
-        */
-        
+        //提示文字
         let txtLocation: UILabel = UILabel()
-        txtLocation.frame = CGRect(x:5, y:imgHight+95, width:(self.view.frame.size.width-10), height:20)
+        txtLocation.frame = CGRect(x:10, y:imgHight+100, width:(self.view.frame.size.width-10), height:20)
         txtLocation.text = "Please follow the map of below to find this goods."
         txtLocation.backgroundColor = UIColor.whiteColor()
         txtLocation.textAlignment = NSTextAlignment.Left
@@ -137,20 +121,17 @@ class DetailViewController: UIViewController {
         locationImageView.contentMode = UIViewContentMode.ScaleAspectFit
         mainView.addSubview(locationImageView)
         
-        
+        // 返回按钮
         let backImageButton = UIButton(frame:CGRectMake(50,imgHight+410,120,35))
-        
         backImageButton.backgroundColor = UIColor.blueColor()
         backImageButton.setTitle("Back", forState:UIControlState.Normal)
         backImageButton.layer.cornerRadius = 5   //圆角
         backImageButton.alpha = 0.4
-        //backImageButton.setImage(UIImage(named:"arrow180"),forState:UIControlState.Normal)
         backImageButton.addTarget(self, action:#selector(DetailViewController.backToPrevious) ,
                                   forControlEvents:UIControlEvents.TouchUpInside)
-        
-
         mainView.addSubview(backImageButton)
         
+        // 加入购物车按钮，动态显示和隐藏
         if self.showAddGoodButton == true {
             //创建加入购物车按钮
             let button:UIButton = UIButton(frame:CGRectMake(180, imgHight+410, 180, 35))
@@ -178,7 +159,7 @@ class DetailViewController: UIViewController {
     
     //加入购物车事件
     func tapped(button:UIButton){
-        print("tapped")
+        //print("tapped")
         
         let addGood:Goods = Goods.init(id:data!.id, name: data!.name, price: data!.price, details: data!.details, imgurl: data!.imgurl)
         //购物车追加

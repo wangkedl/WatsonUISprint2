@@ -405,7 +405,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         self.me = UserInfo(name:"user" ,logo:("person.png"))
         self.Watson  = UserInfo(name:"watson", logo:("watsonlogo.jpeg"))
         
-        let zero =  MessageItem(body:"Hi Dear, I'm watson,What can I do for you!", user:Watson,  date:NSDate(timeIntervalSinceNow:0), mtype:ChatType.Someone)
+        let zero =  MessageItem(body:"Hi Dear, I'm watson. What are you looking for?", user:Watson,  date:NSDate(timeIntervalSinceNow:0), mtype:ChatType.Someone)
         
         self.Chats = NSMutableArray()
         self.Chats.addObjectsFromArray([zero])

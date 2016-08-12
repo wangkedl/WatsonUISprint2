@@ -259,7 +259,6 @@ extension JFShoppingCartViewController {
     
     /**
      点击了多选按钮后的事件处理
-     
      - parameter button: 多选按钮
      */
     @objc private func didTappedSelectButton(button: UIButton) {
