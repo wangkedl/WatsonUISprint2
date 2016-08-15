@@ -76,7 +76,7 @@ class DetailViewController: UIViewController {
         
         //商品详细
         let labelDetail: UILabel = UILabel()
-        labelDetail.frame = CGRect(x:5, y:imgHight+30, width:(self.view.frame.size.width-10)*0.7, height:60)
+        labelDetail.frame = CGRect(x:5, y:imgHight+30, width:(self.view.frame.size.width-10)*0.7, height:55)
         labelDetail.text = data!.details
         labelDetail.backgroundColor = UIColor.whiteColor()
         labelDetail.textAlignment = NSTextAlignment.Left
@@ -88,7 +88,7 @@ class DetailViewController: UIViewController {
         
         //竖线
         let verticalLine = UIView()
-        verticalLine.frame = CGRect(x:10+(self.view.frame.size.width-10)*0.7, y:imgHight+25, width:1, height:60)
+        verticalLine.frame = CGRect(x:10+(self.view.frame.size.width-10)*0.7, y:imgHight+15, width:1, height:60)
         verticalLine.backgroundColor = UIColor.grayColor()
         mainView.addSubview(verticalLine)
         
@@ -101,7 +101,7 @@ class DetailViewController: UIViewController {
         //提示文字
         let txtLocation: UILabel = UILabel()
         txtLocation.frame = CGRect(x:10, y:imgHight+100, width:(self.view.frame.size.width-10), height:20)
-        txtLocation.text = "Please follow the map of below to find this goods."
+        txtLocation.text = "Please follow the map below to find this item."
         txtLocation.backgroundColor = UIColor.whiteColor()
         txtLocation.textAlignment = NSTextAlignment.Left
         txtLocation.font = UIFont(name:"HelveticaNeue", size:15)

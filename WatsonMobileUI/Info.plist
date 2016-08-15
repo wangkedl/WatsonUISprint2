@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Watson-Talk</string>
+	<string>Watson-Chat</string>
 	<key>CFBundleExecutable</key>
 	<string>WatsonMobileUI</string>
 	<key>CFBundleGetInfoString</key>
