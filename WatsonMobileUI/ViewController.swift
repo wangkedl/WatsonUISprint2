@@ -34,6 +34,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
     var callWebServiceFlag:String!
     var currentIndex:Int!
     var currentViewName:String!
+    var constURL:String = "http://watsonserver.mybluemix.net/"
     
     // 购物列表
     var addGoodArray = [Goods]()
@@ -194,7 +195,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         self.tableView.reloadData()
         let escapedString = sender.text!.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())
         // let url = "http://123.57.164.21/WeiXin/WatsonDemo2Servlet?text=" + escapedString!
-        let url = "http://watsonserver.mybluemix.net/sample?text=" + escapedString!
+        let url = constURL + "sample?text=" + escapedString!
         sendTextMessage(url)
         sender.resignFirstResponder()
         sender.text = ""
@@ -288,7 +289,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         self.voiceButton!.backgroundColor = UIColor.lightGrayColor()
         self.microphone.stopFetchingAudio()
         self.ezRecorder.closeAudioFile()
-        let url = "http://watsonserver.mybluemix.net/speech"
+        let url = constURL +  "speech"
         //let url = "http://123.57.164.21/WeiXin/WatsonDemo2Servlet"
         sendVoiceMessage(url)
         
@@ -521,7 +522,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
                     self.tableView.reloadData()
                     
                     //add
-                    self.resendMessage("hi")
+                    self.resendMessage("continue")
                 }
                 
             }else{
@@ -539,7 +540,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         self.tableView.reloadData()
         
         let escapedString = text.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())
-        let url = "http://watsonserver.mybluemix.net/sample?text=" + escapedString!
+        let url = constURL + "sample?text=" + escapedString!
         sendTextMessage(url)
     }
     
@@ -572,7 +573,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
                 self.tableView.chatDataSource = self
                 self.tableView.reloadDataForWaitCell()
                 let escapedString = datastring!.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())
-                let url = "http://watsonserver.mybluemix.net/sample?text=" + escapedString!
+                let url = self.constURL + "sample?text=" + escapedString!
                 self.sendTextMessage(url)
             }else{
                 if(data?.length == 0){
@@ -634,7 +635,7 @@ class ViewController: UIViewController, ChatDataSource,UITextFieldDelegate,EZMic
         self.tableView.chatDataSource = self
         self.tableView.reloadData()
         let escapedString = itemSelectText.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())
-        let url = "http://watsonserver.mybluemix.net/sample?text=" + escapedString!
+        let url = constURL + "sample?text=" + escapedString!
         sendTextMessage(url)
     }
     

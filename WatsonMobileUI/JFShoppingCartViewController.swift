@@ -210,7 +210,6 @@ extension JFShoppingCartViewController: UITableViewDataSource, UITableViewDelega
     
     //选择一行
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //reCalculateGoodCount()
         
         let data:Goods = (addGoodArray?[indexPath.row])!
         let detailView = DetailViewController()

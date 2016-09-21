@@ -127,6 +127,7 @@ class DetailViewController: UIViewController {
         backImageButton.setTitle("Back", forState:UIControlState.Normal)
         backImageButton.layer.cornerRadius = 5   //圆角
         backImageButton.alpha = 0.4
+        backImageButton.addTarget(self,action:#selector(tappedDown(_:)),forControlEvents:.TouchDown)
         backImageButton.addTarget(self, action:#selector(DetailViewController.backToPrevious) ,
                                   forControlEvents:UIControlEvents.TouchUpInside)
         mainView.addSubview(backImageButton)
@@ -137,9 +138,12 @@ class DetailViewController: UIViewController {
             let button:UIButton = UIButton(frame:CGRectMake(180, imgHight+410, 180, 35))
             //设置按钮文字
             button.backgroundColor = UIColor.purpleColor()
-            button.setTitle("Add to shopCat", forState:UIControlState.Normal)
+            button.setTitle("Add to shopCart", forState:UIControlState.Normal)
             button.layer.cornerRadius = 5   //圆角
             button.alpha = 0.6
+            
+            button.addTarget(self,action:#selector(tappedDown(_:)),forControlEvents:.TouchDown)
+            button.addTarget(self,action:#selector(tappedUp(_:)),forControlEvents:.TouchUpOutside)
             button.addTarget(self,action:#selector(tapped(_:)),forControlEvents:.TouchUpInside)
             mainView.addSubview(button)
             
@@ -165,6 +169,16 @@ class DetailViewController: UIViewController {
         //购物车追加
         self.delegate!.registerName(addGood)
         self.dismissViewControllerAnimated( true, completion : nil )
+    }
+    
+    //按钮按下事件（颜色改变）
+    func tappedDown(button:UIButton){
+        button.alpha = 0.2
+    }
+    
+    //按钮松开事件（颜色改变）
+    func tappedUp(button:UIButton){
+        button.alpha = 0.6
     }
     
     //返回按钮
